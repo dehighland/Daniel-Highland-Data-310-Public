@@ -6,10 +6,13 @@
 
 
 #### Beach Video
-[![](http://img.youtube.com/vi/SOSH0QptOx8/0.jpg)](http://www.youtube.com/watch?v=SOSH0QptOx8 "")
+[![Beach](http://img.youtube.com/vi/SOSH0QptOx8/0.jpg)](http://www.youtube.com/watch?v=SOSH0QptOx8 "Beach Video")
+  - Represents an approximately ideal situation for the algorithm
 
 #### Hamilton Video
-[![](http://img.youtube.com/vi/Eq8hT0Cs29s/0.jpg)](http://www.youtube.com/watch?v=Eq8hT0Cs29s "")
+[![Hamilton](http://img.youtube.com/vi/Eq8hT0Cs29s/0.jpg)](http://www.youtube.com/watch?v=Eq8hT0Cs29s "Hamilton Video")
+  - Fun use of the algorithm that displays the effects of shadows
 
 #### Tulsa Video
-[![](http://img.youtube.com/vi/9qfOGnfU0NQ/0.jpg)](http://www.youtube.com/watch?v=9qfOGnfU0NQ "")
+[![Tulsa](http://img.youtube.com/vi/9qfOGnfU0NQ/0.jpg)](http://www.youtube.com/watch?v=9qfOGnfU0NQ "Tulsa Rally Video")
+  - Use of the algorithm on an event that has been tied to a lot of Covid-19 cases
