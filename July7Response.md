@@ -3,3 +3,4 @@
   2. Maroney's simple model for predicted the output of a linear function yields 22.00048 and 22.002514 when 7.0 is input. They are different because there is some random element to machine learning.
      - My understanding is that the gradient dissent that informs the next iteration/epoch of the model does not move down the gradient perfectly/deterministically, as the name "stochastic" gradient dissent implies.
   3. Based off of the model Maroney's exercise outlines, only the house on Holly Point Rd (file name hudgins) is a good deal (3 bedrooms is predicted to mean the house is around 200k, while this house is selling at near 100k). The worst deal is the house on Church St (file name church), which sells at 399k, about 150k above its modeled price.
+  - ![](/DATA310_Images/lecture772000.png)
