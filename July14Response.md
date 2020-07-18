@@ -1,5 +1,7 @@
 # July 14th, 2020 Lecture Response
  1. .
+ ### Original Image (misc.face(gray=True))
+ ![Face](/DATA310_Images/face.png)
  ### Filter: [ [0, 1, 0], [1, -4, 1], [0, 1, 0]]
  ![Filter 1](/DATA310_Images/Lecture7142000.png)
  ### Filter: [ [-1, -2, -1], [0, 0, 0], [1, 2, 1]]
@@ -10,4 +12,5 @@
  2. .
  ### Pooling on misc.face(gray=True)
   ![Filter 3](/DATA310_Images/Lecture7142003.png)
-  - You are reducing the size of the image while, in theory, not losing any important information. This pooling formula takes a 2x2 window and returns only the maximum value within that window (max pooling). The result is that the new image is half the size of the original and consisting of only the most intense values of each 2x2 block. By keeping the most intense values, we are effectively keeping the nonbackground pixels, which are white because our filter turns most of the picture black. As we can see from the above picture, no information appears to have been lost, even though the picture size has been halved from the original 1024
+  - You are reducing the size of the image while, in theory, not losing any important information. This pooling formula takes a 2x2 window and returns only the maximum value within that window (max pooling). The result is that the new image is half the size of the original and consisting of only the most intense values of each 2x2 block. By keeping the most intense values, we are effectively keeping the nonbackground pixels, which are white because our filter turns most of the picture black. As we can see from the above picture, no information appears to have been lost, even though the picture size has been halved from the original 1022x767 to 511x383.
+3. 
