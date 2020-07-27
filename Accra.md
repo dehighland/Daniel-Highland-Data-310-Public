@@ -14,7 +14,7 @@ After using 7000 of 9000 to train the model over 50 epochs, the model appeared t
 
 ![Accuracy](/DATA310_Images/25_8.png)
 
-  This graph of the accuracy shows that it only started improving for the training and testing data at the end, and it was consistently tiny. One possible interpretation of this result compared to the decent Huber and MAE losses is that exact accuracy is a poor metric for this dataset. The population scores on each picture are themselves estimates with several decimal places, so it is hard to exactly land on them. 
+  This graph of the accuracy shows that it only started improving for the training and testing data at the end, and it was consistently tiny. One possible interpretation of this result compared to the decent Huber and MAE losses is that exact accuracy is a poor metric for this dataset. The population scores on each picture are themselves estimates with several decimal places, so it is hard to exactly land on them. Also, because the labels themselves are estimations with noise, lowering the average error is probably more predictive than fitting to the accuracy of each image. 
   
   While the model is certainly not perfect, It performed quite well on the validation images given the relatively short amount of work optimizing the convolutional model.
 
@@ -27,6 +27,8 @@ After using 7000 of 9000 to train the model over 50 epochs, the model appeared t
 ![PopImage](/DATA310_Images/25_10.png)
 ![PopImage](/DATA310_Images/25_11.png)
 
-  While it was extremely close on multiple randomly picked photos, it was siginifacntly far from a lot of the high population images.  Also, the model seemed to consistently lowball its answers. 
+  While it was extremely close on multiple randomly picked photos, it was siginifacntly far from a lot of the high population images.  Also, the model seemed to consistently lowball its answers, likely because the image labels themselves skewed downward. The noisiness of the original population estimations presumably affected our predictions. Several of the low population images have no apparent population in the image, but are listed as having 7 people living in them (for instance). The fact that there is no apparent indicator that people are living in the image perhaps causes our model to find innaccurate predictors and throw off the overall predictions. However, the model nonetheless got the ballpark right (large population area or sparsely populated area).
   
-  The next step in developing the model would be to implement image aumentation into our model. Because population is correlated with roads and houses, the ability to zoom and rotate our images could dramatically raise the model's predictive power.
+  The next step in developing the model would be to implement image aumentation into our model. Because population is correlated with roads and houses, the ability to zoom and rotate our images could dramatically raise the model's predictive power. The convolutional model architecture itself also needs to be tweaked. For instance, there is no activation function on the final layer. The model's predictive power did improve over using both softmax and sigmoid for the final layer; however, I recently found a linear activation for Conv2D which could improve the model. We could also somehow add residential/commerce/etc zone labels to get more descriptive predictions and be able to change our population prediction based off of whether people actually dwell in that area.
+  
+  
