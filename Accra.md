@@ -1,6 +1,9 @@
 # Project 3: Accra Population Estimator
 ---
 
+![MAE](/DATA310_Images/25_00.JPG)
+
+
 ![MAE](/DATA310_Images/25_7.png)
 ![Accuracy](/DATA310_Images/25_8.png)
 
