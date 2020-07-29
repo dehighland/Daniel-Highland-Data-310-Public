@@ -23,12 +23,12 @@
 **SkyNews Headline:** Japan's 'slowest rollercoaster' stops and passengers fail to notice
  + Score: 6.302623e-07
 
-**Analysis:** \
+**Analysis:**\
 The Sarcasm Detector was largely accurate. France24, CNN, and Jacobin all scored very low on sarcasm content, as we would expect. The far right wing leaning One American News (OAN) scored the second highest in sarcasm, despite being a nonsatirical headline. Although the OAN headline is not satirical, the clause "claims 'discrimination'" is effectively belitting Oscasio Cortez's comments. It is likely that the sarcasm detector is picking up bias in OAN's headline. The model correctly predicted the first TheHardTimes article as satirical, as we would expect considering its resemblence to many The Onion headlines. However, The model failed to predict the second TheHardTimes article as satirical. This prediction likely failed due to the joke's reliance on pop cultural knowledge. Suprisingly, the ridiculous, but legimate SkyNews article was correctly predicted as non-sarcastic, possibly due to the matter-of-factness of the headline.
 
 ---
 ## RNN Text Generation
-**1st Pass:** \
+**1st Pass:**\
 ROMEO: at your brother-stayed upon a threats at much
 The handd that all indeed hereic;
 Whose earths with silleng time. Hursead in his peace.
@@ -67,7 +67,7 @@ From here hang-bedeaching naturere cole.
 Thy stag and then five justice, gentle out,
 And us with allegi
 
-**2nd Pass** \
+**2nd Pass**\
 ROMEO: you must be low:
 Tuthonour, I say, we married him with her, brother, safe my eyie
 Tower, one word than peace in such af all undeedy king:
@@ -100,7 +100,7 @@ Your knees do cundle seen, that no virgor,
 Who sett it, and virtuous with his war.
 Heaven here receive't is ermodies, and was
 
-**Paradise Lost by John Milton Test** \
+**Paradise Lost by John Milton Test**\
 Death’d when thus his Sent,
 As sublin hast them likelie, under bless’d.
 A shall lead Pertere these to creating which
@@ -124,7 +124,7 @@ In Wactious, Will af by didgeness endiest peraps,
 Crechave hin thereby Let
 Be whither in show thir Lauds and Hell, so durden
 
-**Analysis:** \
+**Analysis:**\
 Test
 
 ---
