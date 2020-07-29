@@ -125,6 +125,8 @@ Crechave hin thereby Let
 Be whither in show thir Lauds and Hell, so durden
 
 ### **Analysis:**
+![](https://www.tensorflow.org/tutorials/text/images/text_generation_sampling.png)
+
 The model takes a selection of characters (for instance an incomplete sentence) and tries to predict the next character. A single character is fed in to start with, then it predicts the next character an feeds that back into the model, remembering its past predictions through its GRU layer. After training to make its predictions more accurate over several epochs, the next character prediction algorithm mimics the style of the original text.
 
 ---
