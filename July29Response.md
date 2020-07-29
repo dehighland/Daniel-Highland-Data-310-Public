@@ -131,4 +131,12 @@ The model takes a selection of characters (for instance an incomplete sentence) 
 
 ---
 ## Neural Machine Translation
+ 1. **"How are you today?" -> "¿Cómo estás hoy?" -> "How are you today?"**
+ ![16](/DATA310_Images/29_0.png)
+ 2. **"I ate a lot of tacos last night." -> "Anoche comí muchos tacos" -> "I ate last night."**
+ ![16](/DATA310_Images/29_1.png)
+ 3. **"Where in the world is she?" -> "¿En qué parte del mundo está ella?" -> "What did you up?"**
+ ![16](/DATA310_Images/29_2.png)
 
+### Analysis:
+I was not very impressed by the translator. For starters, most attempts at entering sentences resulted in KeyErrors because of the limited scope of the testset. The model seemed to stray pretty far from the original sentence the farther it was from a standard Spanish phrase. It translated "I ate a lot of tacos last night" as "I ate last night," removing the muchos from the translation all together. Some error may have come from me using Google Translate to get the Spanish phrases for translation, but trying to use spanish sentences for Wikipedia proved to complex for the model, so I have to assume the model is just overly simple.
