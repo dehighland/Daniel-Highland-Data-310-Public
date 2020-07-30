@@ -15,4 +15,14 @@
  3. The locations of the embedding vector tips appears to correlate with the positivity or negativity of the word. More specifically, it correlates with whether a certain word is strongly predictive either way for review score.
 ---
 ## RNN Text Classification
- 1. 
+**Base Model**
+
+ ![Graph](/DATA310_Images/28_3.png)
+ ![Graph](/DATA310_Images/28_4.png)
+ 
+**Adding two LSTM Layers**
+
+ ![Graph](/DATA310_Images/28_5.png)
+ ![Graph](/DATA310_Images/28_6.png)
+ 
+ 1. The model did not seem to significantly improve with two Long Short-Term Memory Layers. For the validation loss, we see a near consistent and quicker increase with the LSTM layers than we do without them, where the loss appears to begin decreasing at the end. The validation accuracy stagnants around 0.83 both with and without the LSTM layers; however, the accuracy is more sharply decreasing without the LSTM layers, so it is possible the LSTM model would fare better than the LSTM-less model over more epochs.
