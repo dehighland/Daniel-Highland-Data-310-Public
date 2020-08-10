@@ -24,14 +24,17 @@
 + I zeroed in on Poe's wife Virginia first showing symptoms of tuberculosis as a likely inflection point in Poe's life.
      + [Link to chapter of biography by Arthur Hobson Quinn that describes the event](https://www.eapoe.org/papers/misc1921/quinnc13.htm)
 + As a proof of concept, I first used a four layer RNN model from the Google Tensorflow website. 
+     + ![TensorModel](/DATA310_Images/model.JPG)
      + This model was fairly overfit and produced wildly inconsistent results with the Poe stories between runs
      + Google's model only provided sentiment polarity, so I had to expand my horizons to pick up on other attributes of the text
+     + This model was trained on movie reviews, which I felt was a poor fit for mental health research
 + I moved to using TextBlob     
      + TextBlob is a simplified subset of the larger and more indepth Natural Language Toolkit library. 
      + TextBlob greatly reduces the complexity of setting up a model and training embeddings at the cost of low visibility on how it does so. 
      + To process the data, I went through each text file of Poe's stories and split the name along the dash to keep the title in dataset while converting the month and year into a datetime object. 
      + The contents of each story then had both their sentiment polarity and sentiment subjectivity recorded. In each of these graphs I plotted the raw data in blue and the average per year in orange. 
      + I also plotted sentiment polarity against sentiment subjectivity and used a color spectrum starting at blue and ending at red to see if there was any combined relationship between the two variables.
++ After this point, I lost my power for a day and then suddenly had a roommate who I needed to drive places, so I moved towards finishing the project presentation instead of improving the project proper
 
 ## Results
 ### Early tensorflow results
@@ -51,3 +54,18 @@
  + The TextBlob model showed no indication that there was a distinct shift in Poe's polarity across his works. 
  + My prediction that Virginia developing TB seems to be supported by the graph of the subjectivity of Poe's works, as that date seems to roughly mark a sudden shift to more objectivity. 
      + This result could mean that Poe having to face the mortality of his wife influenced him to be more grounded in his writing. 
+ + I found no way to access the accuracy of TextBlob on the data
+     + I looked a various passages using TextBlob and they seemed correctly described by the sentiment scores, but I could not have an overall metric of model accuracy.
+
+## Challenges and Future
++ The key issue I need to deal with is how to calibrate polarity and subjectivity, especially towards 19th Century Dialect
+    + I also need to be able to access the quality of my model in a clear way.
+    + After having time to think again after finishing the showcase, I think this iteration of the project would have been better if I avoided TextBlob and instead built my own RNN.
+        + I moved to TextBlob because I perceived that it was probably more accurate than basing the sentiment of Poe's stories on movie reviews
+        + Though I am probably right in that assessment, I should I turned instead towards training an RNN on [other data](https://www.kaggle.com/kazanova/sentiment140)
+        + The process of tweaking the RNN would have been more educational for me and more entertaining as a presentation
++ In future presentations, I should emphasize the process that I took to get to my result more
+        + I avoided showing the tensorflow model in my showcase presentation because I wanted to make sure my presentation was clear and didn't devolve into my listing off what I did in a rambley fashion, but I overcorrected.
++ I hope to work on this project some more once I have some freetime and look into developing it in a more professional way
+
+-Daniel Highland
