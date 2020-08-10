@@ -1,7 +1,6 @@
 # Final Project Writeup
 ---
-+ Poster link:
-![Poster](/DATA310_Images/PoePoster.pdf)
++ [Poster](https://github.com/dehighland/Daniel-Highland-Data-310-Public/blob/master/DATA310_Images/PoePoster.pdf)
 + [Presentation](https://docs.google.com/presentation/d/11O8A85CxwdFev25K6BQpjWPnU_1C19AhFvJHG73Fcy4/edit?usp=sharing)
 + [Presentation Script](https://docs.google.com/presentation/d/144kQP9BXnLJUHssBJZw1q9iHKQuUzfewuI-Wp_kxYjs/edit?usp=sharing)
 
